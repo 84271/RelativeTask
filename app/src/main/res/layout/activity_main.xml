@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="67dp"
+        android:layout_height="72dp"
+        android:id="@+id/ivspace_station"
+        android:src="@drawable/space_station"></ImageView>
+
+    <ImageView
+        android:layout_width="67dp"
+        android:layout_height="72dp"
+        android:src="@drawable/space_station"
+        android:id="@+id/ivspace"
+        android:layout_toEndOf="@+id/ivspace_station"></ImageView>
+
+    <ImageView
+        android:layout_width="67dp"
+        android:layout_height="72dp"
+        android:src="@drawable/space_station"
+        android:layout_toEndOf="@+id/ivspace"></Image
+
+    <TextView
+        android:id="@+id/tvSpaceStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toBelowOf="@+id/ivspace_station"
+        android:layout_weight="1"
+        android:text="Space Station"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flights"
+        android:layout_toEndOf="@+id/tvSpaceStation"
+        android:id="@+id/tvFlights"></TextView>
+
+    <TextView
+        android:id="@+id/tvRovers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvFlights"
+        android:text="Rovers"></TextView>
+
+
+</LinearLayout>
