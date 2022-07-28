@@ -83,8 +83,8 @@
         android:layout_marginTop="84dp"
         android:layout_weight="1"
         android:text="DCA"
-        android:textSize="25sp"
-        android:textColor="@color/black"></Button>
+        android:textColor="@color/black"
+        android:textSize="25sp"></Button>
 
     <Button
         android:id="@+id/btnMARS"
@@ -92,25 +92,14 @@
         android:layout_height="150dp"
         android:layout_below="@+id/tvRovers"
         android:layout_marginTop="82dp"
+        android:layout_toEndOf="@id/tvFlights"
         android:layout_weight="1"
         android:text="MARS"
-        android:layout_toEndOf="@id/tvFlights"
         android:textColor="@color/black"
         android:textSize="25sp"></Button>
 
 
-    <ImageView
-        android:id="@+id/ivArrows"
-        android:layout_width="117dp"
-        android:layout_height="78dp"
-        android:layout_below="@+id/btnDCA"
-        android:layout_marginStart="-22dp"
-        android:layout_marginTop="-115dp"
-        android:layout_marginEnd="-30dp"
-        android:layout_marginBottom="-30dp"
-        android:layout_toEndOf="@+id/btnDCA"
-        android:padding="3dp"
-        android:src="@drawable/arrows"></
+
 
     <Switch
         android:layout_width="150dp"
@@ -121,20 +110,37 @@
         android:textStyle="bold"
         android:layout_marginTop="82dp"
         android:textSize="20sp"
+        android:background="@color/material_dynamic_neutral60"
         android:textColor="@color/black"></Switch>
 
     <TextView
         android:id="@+id/tvTraveller"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_weight="1"
         android:layout_below="@+id/swWay"
         android:textColor="@color/black"
         android:layout_marginTop="25dp"
         android:textStyle="bold"
+        android:background="@color/material_dynamic_neutral60"
         android:textSize="20sp"
         android:text="1 Traveller"></TextView>
 
+    <ImageView
+        android:id="@+id/ivArrows"
+        android:layout_width="150dp"
+        android:layout_height="169dp"
+        android:layout_alignTop="@id/btnDCA"
+        android:layout_alignBottom="@id/btnDCA"
+        android:layout_marginStart="-34dp"
+        android:layout_marginTop="-7dp"
+        android:layout_marginEnd="-39dp"
+        android:layout_marginBottom="-12dp"
+        android:layout_toStartOf="@+id/btnMARS"
+        android:layout_toEndOf="@+id/btnDCA"
+        android:elevation="@dimen/margin_20dp"
+        android:padding="3dp"
+        android:src="@drawable/arrows"></ImageView>
 
 
 
