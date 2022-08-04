@@ -66,14 +66,6 @@
         android:layout_toEndOf="@id/tvFlights"
         android:text="Rovers"></TextView>
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/space_station"
-        android:padding="10dp"
-        android:layout_marginHorizontal="10dp"
-        android:id="@+id/ivspace"
-        android:layout_toEndOf="@+id/ivspace_station"></ImageView>
 
     <Button
         android:id="@+id/btnDCA"
